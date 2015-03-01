@@ -1,0 +1,127 @@
+/** CSS FOR PAPER TOWN FRIENDS **/
+
+/********************************************* INTRO **************************************************/
+
+/** CSS RESET BY ERIC MEYER **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;	padding: 0;	border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+body {line-height: 1.5;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+
+/* remember to define focus styles! */
+:focus {	outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;	border-spacing: 0;}
+
+
+/** USEFUL CLASSES **/
+/* CLEARFIX */
+.clearfix:after {content: "."; display: block; visibility: hidden; clear: both; height: 0;}
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.clear {clear: both;}
+.right {float: right;}
+.left {float: left;}
+.hide {display: none;}
+
+/***********************************************************************************************/
+
+
+/******************************************* GENERAL LAYOUT *******************************************/
+body {font: 0.625em/1.5 Courier New, Courier, monospace; color: #333; text-align: center; background: #b9916d url(images/maple_tile.jpg); padding: 20px 0; font-weight: bold;}
+div#container {text-align: left; width: 960px; margin: 0 auto; min-height: 500px; background: #dee3eb url(images/paper_texture.jpg); 
+/** CSS 3 **/
+-moz-box-shadow: 0 1px 10px #444;
+-webkit-box-shadow: 0 1px 10px #444; position: relative; font-size: 2em; padding-bottom: 30px;}
+
+/** header **/
+div#header {float: right; width: 355px; padding-top: 100px; position: relative; right: 40px; z-index: 0;}
+
+/** characters **/
+div#characters {position: relative; width: 600px; height: 880px; float: left; z-index: 100;}
+div#dino {position: absolute; left: 65px; top: 18px; width: 261px; height: 382px; background: url(images/dino.png) no-repeat 0 0;}
+div#frog {position: absolute; left: 320px; top: 90px; width: 215px; height: 345px; background: url(images/frog.png) no-repeat 0 0;}
+div#duck {position: absolute; left: 212px; top: 250px; width: 209px; height: 336px; background: url(images/duck.png) no-repeat 0 0; z-index: 200;}
+div#cat {position: absolute; left: 40px; top: 430px; width: 226px; height: 343px; background: url(images/cat.png) no-repeat 0 0; z-index: 400;}
+div#baby {position: absolute; left: 390px; top: 390px; width: 227px; height: 334px; background: url(images/baby.png) no-repeat 0 0; z-index: 400;}
+div#monkey {position: absolute; left: 190px; top: 530px; width: 273px; height: 331px; background: url(images/monkey.png) no-repeat 0 0; z-index: 800;}
+
+
+/** media **/
+div#media {}
+
+/****************************************** HEADER *********************************************/
+/** logo **/
+div#header h1 a:link, div#header h1 a:visited {display: block; width: 360px; height: 250px; background: url(images/logo.jpg) no-repeat 0 0; margin-bottom: 30px; position: relative; right: 10px;}
+div#header h1 a:hover {background-position: -360px 0;}
+
+/** buy link **/
+div#header h2 a:link, div#header h2 a:visited {display: block; width: 177px; height: 177px; background: url(images/buy_link.jpg) no-repeat 0 0; margin: 0 auto; position: relative; top: 15px; left: 10px;}
+div#header h2 a:hover {background-position: -177px 0;}
+
+/** description **/
+div#header p#description {text-align: center; line-height: 0.98; margin-bottom: 40px; position: relative; left: 20px; bottom: 12px;}
+p#description strong {font-size: 1.35em;}
+span#dress-up {display: block; position: relative; right: 55px;}
+span#entirely {position: relative; right: 20px;}
+
+/****************************************** MEDIA & FEATURES *********************************************/
+
+/** features **/
+div#media ul {padding-left: 100px; float: left; width: 420px; margin-right: 50px;}
+div#media li {font-size: 0.8em; text-align: center; line-height: 1.1; margin-bottom: 20px; font-weight: bold;}
+div#media li strong {font-size: 1.25em;}
+span#mix {display: block; position: relative; right: 20px;}
+span#items {position: relative; left: 46px;}
+span#watch {display: block; position: relative; right: 10px;}
+span#on {position: relative; right: 60px;}
+span#save {display: block; position: relative; right: 20px;}
+span#buddies {position: relative; left: 45px;}
+
+/** video link **/
+div#media li#video_link a:link, div#media li#video_link a:visited {display: block; width: 184px; height: 184px; background: url(images/video_link.jpg) no-repeat 0 0; margin: 0 auto; position: relative; left: 50px;}
+div#media li#video_link a:hover {background-position: -184px 0;}
+
+
+/** slideshow **/
+div#slideshow {float: left; width: 322px; height: 586px; background: url(images/iphone.jpg) no-repeat 0 0; position: relative; right: 30px; bottom: 140px; margin-bottom: -100px;}
+div#slideshow a#prev:link, div#slideshow a#prev:visited, div#slideshow a#next:link, div#slideshow a#next:visited  {display: block; width: 60px; height:61px; position: absolute; top: 240px; left: 0; z-index: 500;}
+div#slideshow a#prev:link, div#slideshow a#prev:visited  {background: url(images/prev.jpg) no-repeat 0 0; left: -50px;}
+div#slideshow a#next:link, div#slideshow a#next:visited  {background: url(images/next.jpg) no-repeat 0 0; left: 325px;}
+div#slideshow a#prev:hover, div#slideshow a#next:hover {top: 241px;}
+
+div#slideshow div#display {position: absolute; top: 96px; left: 30px; height: 384px; width: 256px; overflow: hidden;}
+div#slideshow div#display img {position: absolute; left: 0; top: 0; }
+
+
+/** footer **/
+div#footer {text-align: center;}
+div#footer ul {width: 542px; margin: 0 auto;}
+div#footer ul li {float: left; margin-right: 20px; font-size: 0.6em;}
+a#contact:link, a#contact:visited, a#robin:link, a#robin:visited, a#blog:link, a#blog:visited {position: relative; top: 5px;}
+a#blog:link, a#blog:visited {display: block; width: 34px; height: 15px; background: url(images/blog.gif) no-repeat 0 0; top: 4px;}
+a#contact:link, a#contact:visited {display: block; width: 83px; height: 25px; background: url(images/contact_us.gif) no-repeat 0 0;}
+a#robin:link, a#robin:visited {display: block; width: 156px; height: 25px; background: url(images/robin.gif) no-repeat 0 0;}
+a#contact:hover, a#robin:hover, a#blog:hover {top: 6px;}
+li#copyright {position: relative; top: 3px;}
+
+
+
